@@ -1,4 +1,4 @@
-setwd("C:/Users/luish/OneDrive - University of Leeds/4. MATH5741M Statistical Theory and Methods (33874)/coursework 1")
+#setwd("C:/Users/luish/OneDrive - University of Leeds/4. MATH5741M Statistical Theory and Methods (33874)/coursework 1")
 #load('rehoming.RData')
 #createsample(201899113)
 #save(mysample, file = 'mysample.RData')
@@ -94,7 +94,7 @@ results <- data.frame(
 # Print results
 print(results)
 
-# 4 Inference: CI----
+# 4 Inference: CIs for each breed----
 
 # Function to calculate confidence intervals
 calc_confidence_interval <- function(data, mu, method) {
@@ -161,7 +161,7 @@ ggplot(plot_data, aes(y = Breed, x = Mean)) +
   theme_minimal()+
   xlim(NA,x_max)
 
-# 5. paired samples: independant samples---- 
+# 5. Comparison for each pair: Pairwise CIs---- 
 
 # Function to calculate confidence interval for the difference in means
 calc_mean_diff_ci <- function(data1, data2, equal_var = TRUE) {
